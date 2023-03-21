@@ -19,11 +19,9 @@ COPY package.json package-lock.json   /app/
 RUN cd /app && npm set progress=false && npm install
 # Copy project files into the docker image
 COPY .  /app
-RUN cd /app && npm run build
+RUN cd /app && npm run build && cp -pr /app/dist/angular-nginx-docker/* /usr/share/nginx/html
 
-COPY ./dist/angular-nginx-docker/ /usr/share/nginx/html
 
-#COPY --from=builder /app/dist/angular-nginx-docker /usr/share/nginx/html
 
 # Default command to run our server!
 CMD ["nginx", "-g", "daemon off;"]
