@@ -9,29 +9,27 @@ There can be cases where you have angular application directly communicating wit
 == How to run
 
 * Clone the project.
-+
-[source,shell]
+
+
 ----
-$ git clone https://github.com/kprasad99/angular-nginx-docker.git
+$ git clone [https://github.com/SWAGATAM04/nodejs-ui-container-redhat-ubi8-minimal.git]
 ----
 
 * Go to project directory
-+
-[source,shell]
+
 ----
 $ cd angular-nginx-docker
 ----
 
 * Initialize the project
-+
-[source,shell]
+
+
 ----
 $ yarn
 ----
 
 * Build the project
-+
-[source,shell]
+
 ----
 $ npm install
 ----
