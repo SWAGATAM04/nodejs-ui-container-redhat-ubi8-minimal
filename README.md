@@ -33,14 +33,14 @@ $ yarn
 +
 [source,shell]
 ----
-$ ng build --prod
+$ npm install
 ----
 
 === Deploy using docker command
 
 * Build the image
-+
-[source,shell]
+----
+ $ npm run build
 ----
 $ docker build -t angular-nginx-docker .
 ----
