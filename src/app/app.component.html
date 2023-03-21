@@ -1,0 +1,27 @@
+<div fxLayout="column" fxFlexFill fxLayoutGap="5px">
+  <mat-toolbar color="primary">
+    <span>Demo Page</span>
+    <div fxFlex fxFlexFill></div>
+    <div>
+      <button mat-icon-button [matMenuTriggerFor]="appMenu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #appMenu="matMenu">
+        <button mat-menu-item>Settings</button>
+        <button mat-menu-item>Help</button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item>Logout</button>
+      </mat-menu>
+    </div>
+  </mat-toolbar>
+  <div fxFlex style="padding: 12px">
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <span style="font-size: 2.5em; font-style: bold">This is Angluar Page Created for demo</span>
+    </div>
+  </div>
+  <mat-toolbar color="primary">
+    <div fxLayout="row" fxLayoutAlign="center center" style="width: 100%">
+      All Rights Reserved 2023 @ Swagatam 
+    </div>
+  </mat-toolbar>
+</div>
